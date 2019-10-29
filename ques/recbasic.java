@@ -1,14 +1,20 @@
 import java.util.Scanner;
-public class basicRec{
-    public static Scanner scn=new Scanner(System.in);
-    public static void main(String[] args){
-    int n=scn.nextInt();
-    printInc(1, n);
-  }
 
+public class basicRec
+{
+    public static Scanner scn=new Scanner(System.in);
     
-    public static void printInc(int st,int end){
-        if(st==end+1){
+    public static void main(String[] args)
+    {
+        int n=scn.nextInt();
+        printInc(1, n);
+    }
+    
+    //recursive function to print numbers in increasing order from 1 to n
+    public static void printInc(int st,int end)
+    {
+        if(st==end+1)
+        {
             return;
         }
 
